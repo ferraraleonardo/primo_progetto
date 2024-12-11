@@ -8,4 +8,7 @@ def es_if(request):
     }
     return render(request, "es_if.html", context)
 
-# Create your views here.
+def index2(request):
+    return render(request, "index2.html")
+   
+
