@@ -1,5 +1,6 @@
+import datetime
 from django.shortcuts import render
-from django.shortcuts import datetime
+
 
 def es_if(request):
     context = {
