@@ -23,7 +23,8 @@ urlpatterns = [
     path('prima_app/',include("prima_app.urls",namespace="prima_app")),
     path('', index_root, name='index_root'),
     path('seconda_app/',include("seconda_app.urls",namespace="seconda_app")),
-]
+    path('forms_app/',include("forms_app.urls",namespace="forms_app")),
+]   
 
 #Add Django site authentication urls (for login, logout, password management)
 urlpatterns += [
