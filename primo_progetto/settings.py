@@ -43,6 +43,10 @@ INSTALLED_APPS = [
     'news',
     'corsi_formazione',
     'forms_app',
+    'api',
+    'crispy_bootstrap4',
+    'crispy_forms',
+    'voti',
   
 ]
 
@@ -65,7 +69,9 @@ TEMPLATES = [
                  os.path.join(BASE_DIR, 'templates'),
                  os.path.join(BASE_DIR, 'seconda_app/templates'),
                  os.path.join(BASE_DIR, 'news/templates'),
-                 os.path.join(BASE_DIR, 'forms_app/templates')
+                 os.path.join(BASE_DIR, 'forms_app/templates'),
+                 os.path.join(BASE_DIR, 'api/templates'),
+                 os.path.join(BASE_DIR, 'voti/templates')
                  ],
 
         'APP_DIRS': True,
@@ -141,3 +147,5 @@ LOGIN_REDIRECT_URL = '/'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
