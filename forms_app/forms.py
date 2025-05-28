@@ -1,7 +1,7 @@
-from django import from .forms import 
-class FormContatto(forms.Form):
-    nome = form.CharField()
-    cognome = forms.CharFiled()
-    email = forms.CharFiled()
-    contenuto = forms.CharFiled(widget=forms.Textarea(attrs={"placeholder": "Area Testuale! Scrivi pure!"}))
-    
+from django import forms 
+from .models import Contatto
+
+class FormContatto(forms.ModelForm):
+   class Meta:
+    model = Contatto
+    fields = "__all__"
